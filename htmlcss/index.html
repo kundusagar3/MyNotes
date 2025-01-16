@@ -1,8 +1,18 @@
-
 <!DOCTYPE html>
 <html>
   <head>
     <title>My First Web Page..</title>
+
+    <!-- change favicon in tab bar
+     <link
+     rel="icon"
+     href="https://png.pngtree.com/png-vector/20220508/ourmid/pngtree-logo-set-modern-and-creative-branding-idea-collection-for-business-company-png-image_4565604.png"
+   /> -->
+    <!-- search favicon png -> open the icon -> right click and open image in new tab -> copy the .png url  -->
+    <link
+      rel="icon"
+      href="https://www.tosfrit.es/wp/wp-content/uploads/2017/01/cropped-Favicon-300x300.png"
+    />
   </head>
   <body>
     <p>This is a paragraph.</p>
@@ -93,5 +103,163 @@
     <!-- Block elements : take whole WIDTH available.(p, ul, ol, li, div, h1..h6, form, header, footer);
     Inline elements : take as much as WIDTH as the content.(input, img, label, a);
                       Inline elements does not understand the properties of height, margin, padding etc; -->
+
+    <p style="border: 1px solid; width: 200px; height: 100px">Sagar</p>
+    <p style="border: 1px solid; width: 200px; height: 100px">Kundu</p>
+
+    <a href="" style="border: 1px solid; width: 200px; height: 100px"
+      >Twitter</a
+    >
+    <a href="" style="border: 1px solid; width: 200px; height: 100px"
+      >Facebook</a
+    >
+
+    <!-- An attribute in HTML provides additional information about an element and is
+    always included in the opening tag. Attributes define properties or settings
+    of HTML elements and are written as name-value pairs. -->
+
+    <!-- Absolute path : path which start at the very beginning , not related to CWD(current working directory) -->
+    <img
+      src="https://images.pexels.com/photos/1133957/pexels-photo-1133957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      alt="photo"
+      title="text on hovering"
+    />
+    <img src="file:///c://photos/image.jpg" alt="" title="text on hovering" />
+
+    <!-- Relative path : path which start at our CWD -->
+    <img
+      src="assets/leaf.avif"
+      alt="leaf photo"
+      height="400"
+      width="650px"
+      title="text on hovering"
+    />
+    <img
+      src="../image/nature-3082832_1280.jpg"
+      alt="nature photo"
+      width="650px"
+      height="400px"
+      title="text on hovering"
+    />
+
+    <!-- Difference b/w <b> and <strong> and <i> and <em>, in look they are same 
+      but strong and em has semantic emphasis or meaning, and convey for screen readers by search engine. -->
+    <p>This is a <b>bold</b> word</p>
+    <p>This is <i>italic</i> style</p>
+
+    <p>This is <strong>important</strong> word</p>
+    <p>It is <em>urgent</em></p>
+
+    <!-- Semantic tag : tags whose purpose is understood by their name.
+     Dedicative tags for dedicative purpose.
+     Meaningfull tags for a specific functionality.
+     
+     header, footer, nav, table, form, section, aside, sidebar, main, strong, em etc.
+
+     ****div**** is not semantic tag cz we don't understood its purpose by its name
+
+     the difference b/w normal tag and semantic tag is semantic tags has higher priority in search engine(SEO).
+     -->
+
+    <!-- <table>
+      <thead>
+        <tr>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td></td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td></td>
+        </tr>
+      </tfoot>
+    </table> -->
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sagar Kundu</td>
+          <td>kundusagar3gmail.com</td>
+          <td>9748569621</td>
+        </tr>
+        <tr>
+          <td>Roni Kundu</td>
+          <td>kunduroni3gmail.com</td>
+          <td>9088830047</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">@copyright#2025</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Price</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Apples</td>
+          <td>$2</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>Bananas</td>
+          <td>$1</td>
+          <td>10</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">Total</td>
+          <td>15</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- colspan, rowspan, cellpadding, cellspacing -->
+
+    <table border="1" cellpadding="10"cellspacing="5">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">Sagar Kundu</td>
+          <td rowspan="2">kundusagar3gmail.com</td>
+          <td>9748569621</td>
+        </tr>
+        <tr>
+          <td>9434745150</td>
+        </tr>
+        <tr>
+          <td>Roni Kundu</td>
+          <td>kunduroni3gmail.com</td>
+          <td>9088830047</td>
+        </tr>
+      </tbody>
+    </table>
+
   </body>
 </html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <thead>
+    <title>Form</title>
+  </thead>
+  <tbody>
+    <form>
+      <div>
+        <label for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter your name"
+          id="name"
+          value="Sagar Kundu"
+          required
+          readonly
+        />
+      </div>
+      <div>
+        <label for="pass">Password</label>
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter your password"
+          id="pass"
+          required
+        />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          id="email"
+          required
+        />
+      </div>
+      <div>
+        <label for="phone">Phone number</label>
+        <select name="country">
+          <optgroup label="Asia">
+            <option value="+91">India</option>
+          </optgroup>
+          <optgroup label="Europe">
+            <option value="+1">USA</option>
+          </optgroup>
+        </select>
+        <input
+          type="number"
+          name="phone"
+          placeholder="Enter your 10 digit phone number"
+          id="phone"
+          required
+        />
+      </div>
+      <div>
+        <label>Age</label>
+        <input type="number" name="Age" min="18" max="40" />
+      </div>
+      <div>
+        <label>Gender</label>
+        <input type="radio" />Male <input type="radio" />Female
+        <input type="radio" />Other
+      </div>
+      <!-- <div>
+        <label>Address</label>
+        <textarea name="address" rows="10" cols="64"></textarea>
+      </div> -->
+
+      <!-- ***** -->
+      <!-- radio : Out of the group only ONE will be selected, 
+       if we tell the browser which are in the group by applying "name" attribute.  -->
+
+      <!-- in the following Male, Female, Other come in the same group "gender", thus 
+        only one will be selected -->
+      <div>
+        <label>Gender</label>
+        <label><input type="radio" name="gender" />Male</label>
+        <label><input type="radio" name="gender" />Female</label>
+        <label><input type="radio" name="gender" />Other</label>
+      </div>
+      <input type="submit" name="submit" />
+      <button>submit</button>
+    </form>
+  </tbody>
+</html>
